@@ -1,0 +1,10 @@
+{ CustomGroupDefinition('7157cdcc-89be-4ac0-b1b9-7236cad4ca0c', '') }
+
+VAR
+    Value1 : INT { CustomGroupReference('7157cdcc-89be-4ac0-b1b9-7236cad4ca0c') } {Id('1b353cae-75fc-494f-aa93-d6cf618ab93c')};
+    Value2 : INT { CustomGroupReference('7157cdcc-89be-4ac0-b1b9-7236cad4ca0c') } {Id('227d41b8-a484-4a0c-bf3c-876b943e4693')};
+    Sum : INT { CustomGroupReference('7157cdcc-89be-4ac0-b1b9-7236cad4ca0c') } {Id('d639c284-f95c-4b48-877c-c796429b2e68')};
+    xStart : BOOL { CustomGroupReference('7157cdcc-89be-4ac0-b1b9-7236cad4ca0c') } {Id('242f0424-7858-4f9b-9efd-e16976278335')};
+    xStop : BOOL { CustomGroupReference('7157cdcc-89be-4ac0-b1b9-7236cad4ca0c') } {Id('c32aac5e-67b3-4014-b38b-7435dd5751c0')};
+    xRunning : BOOL { CustomGroupReference('7157cdcc-89be-4ac0-b1b9-7236cad4ca0c') } {Id('262c12d7-6e30-47ba-8f81-89e56be80046')};
+END_VAR

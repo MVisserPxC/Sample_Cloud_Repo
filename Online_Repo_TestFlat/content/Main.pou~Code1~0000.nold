@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<body xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <LD>
+  <label localId="7" height="4" width="35" label="Code1_Network1" executionOrderId="1">
+   <position x="5" y="8" />
+   <addData>
+    <data name="objectInformation" handleUnknown="preserve">
+     <objectInformation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" networkId="2" subNetworkId="0" />
+    </data>
+    <data name="labelInformation" handleUnknown="preserve">
+     <labelInformation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" parentNetworkId="1" comment="" />
+    </data>
+   </addData>
+  </label>
+  <leftPowerRail localId="2" height="8" width="3" executionOrderId="2">
+   <position x="6" y="16" />
+   <connectionPointOut formalParameter="9">
+    <relPosition x="3" y="2" />
+    <addData>
+     <data name="linkInformation" handleUnknown="preserve">
+      <linkInformation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" executionOrderId="2" localId="9" />
+     </data>
+    </addData>
+   </connectionPointOut>
+   <connectionPointOut formalParameter="10">
+    <relPosition x="3" y="6" />
+    <addData>
+     <data name="linkInformation" handleUnknown="preserve">
+      <linkInformation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" executionOrderId="2" localId="10" />
+     </data>
+    </addData>
+   </connectionPointOut>
+   <addData>
+    <data name="objectInformation" handleUnknown="preserve">
+     <objectInformation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" networkId="1" subNetworkId="0" />
+    </data>
+   </addData>
+  </leftPowerRail>
+  <contact localId="3" height="4" width="18" executionOrderId="8">
+   <position x="11" y="16" />
+   <connectionPointIn>
+    <relPosition x="0" y="2" />
+    <connection refLocalId="2" formalParameter="9">
+     <position x="11" y="18" />
+     <position x="9" y="18" />
+     <addData>
+      <data name="connectionInformation" handleUnknown="preserve">
+       <connectionInformation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" useAutoConnector="false" useUserConnector="false" implicitMultiRouted="false" invisible="false" wasExplicitFeedback="false" />
+      </data>
+     </addData>
+    </connection>
+   </connectionPointIn>
+   <connectionPointOut>
+    <relPosition x="18" y="2" />
+   </connectionPointOut>
+   <variable>xStart</variable>
+   <addData>
+    <data name="objectInformation" handleUnknown="preserve">
+     <objectInformation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" networkId="1" subNetworkId="0" />
+    </data>
+   </addData>
+  </contact>
+  <contact localId="8" height="4" width="18" executionOrderId="10">
+   <position x="11" y="20" />
+   <connectionPointIn>
+    <relPosition x="0" y="2" />
+    <connection refLocalId="2" formalParameter="10">
+     <position x="11" y="22" />
+     <position x="9" y="22" />
+     <addData>
+      <data name="connectionInformation" handleUnknown="preserve">
+       <connectionInformation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" useAutoConnector="false" useUserConnector="false" implicitMultiRouted="false" invisible="false" wasExplicitFeedback="false" />
+      </data>
+     </addData>
+    </connection>
+   </connectionPointIn>
+   <connectionPointOut>
+    <relPosition x="18" y="2" />
+   </connectionPointOut>
+   <variable>xRunning</variable>
+   <addData>
+    <data name="objectInformation" handleUnknown="preserve">
+     <objectInformation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" networkId="1" subNetworkId="0" />
+    </data>
+   </addData>
+  </contact>
+  <contact localId="11" height="4" width="18" executionOrderId="12" negated="true">
+   <position x="31" y="16" />
+   <connectionPointIn>
+    <relPosition x="0" y="2" />
+    <connection refLocalId="3">
+     <position x="31" y="18" />
+     <position x="29" y="18" />
+     <addData>
+      <data name="connectionInformation" handleUnknown="preserve">
+       <connectionInformation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" useAutoConnector="false" useUserConnector="false" implicitMultiRouted="false" invisible="false" wasExplicitFeedback="false" />
+      </data>
+     </addData>
+    </connection>
+    <connection refLocalId="8">
+     <position x="31" y="18" />
+     <position x="30" y="18" />
+     <position x="30" y="22" />
+     <position x="29" y="22" />
+     <addData>
+      <data name="connectionInformation" handleUnknown="preserve">
+       <connectionInformation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" useAutoConnector="false" useUserConnector="false" implicitMultiRouted="false" invisible="false" wasExplicitFeedback="false" />
+      </data>
+     </addData>
+    </connection>
+   </connectionPointIn>
+   <connectionPointOut>
+    <relPosition x="18" y="2" />
+   </connectionPointOut>
+   <variable>xStop</variable>
+   <addData>
+    <data name="objectInformation" handleUnknown="preserve">
+     <objectInformation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" networkId="1" subNetworkId="0" />
+    </data>
+   </addData>
+  </contact>
+  <coil localId="20" height="4" width="18" executionOrderId="14">
+   <position x="51" y="16" />
+   <connectionPointIn>
+    <relPosition x="0" y="2" />
+    <connection refLocalId="11">
+     <position x="51" y="18" />
+     <position x="49" y="18" />
+     <addData>
+      <data name="connectionInformation" handleUnknown="preserve">
+       <connectionInformation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" useAutoConnector="false" useUserConnector="false" implicitMultiRouted="false" invisible="false" wasExplicitFeedback="false" />
+      </data>
+     </addData>
+    </connection>
+   </connectionPointIn>
+   <connectionPointOut>
+    <relPosition x="18" y="2" />
+   </connectionPointOut>
+   <variable>xRunning</variable>
+   <addData>
+    <data name="objectInformation" handleUnknown="preserve">
+     <objectInformation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" networkId="1" subNetworkId="0" />
+    </data>
+   </addData>
+  </coil>
+  <rightPowerRail localId="12" height="8" width="3" executionOrderId="18">
+   <position x="71" y="16" />
+   <connectionPointIn>
+    <relPosition x="0" y="2" />
+    <connection refLocalId="20">
+     <position x="71" y="18" />
+     <position x="69" y="18" />
+     <addData>
+      <data name="connectionInformation" handleUnknown="preserve">
+       <connectionInformation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" useAutoConnector="false" useUserConnector="false" implicitMultiRouted="false" invisible="false" wasExplicitFeedback="false" />
+      </data>
+     </addData>
+    </connection>
+    <addData>
+     <data name="linkInformation" handleUnknown="preserve">
+      <linkInformation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" executionOrderId="-2147483648" localId="18" />
+     </data>
+    </addData>
+   </connectionPointIn>
+   <addData>
+    <data name="objectInformation" handleUnknown="preserve">
+     <objectInformation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" networkId="1" subNetworkId="0" />
+    </data>
+   </addData>
+  </rightPowerRail>
+ </LD>
+ <addData>
+  <data name="docInformation" handleUnknown="preserve">
+   <docInformation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gridActive="true" pageWidth="-1">
+    <version>2.6.0.396.0:A1.8</version>
+    <multilineOptions maximumContactWidth="18" minimumContactWidth="18" maximumContactLines="7" contactEllipse="true" maximumInstanceNameWidth="32" maximumInstanceNameLines="5" instanceNameEllipse="true" maximumVariableWidth="2147483647" variableEllipse="false" />
+   </docInformation>
+  </data>
+ </addData>
+</body>

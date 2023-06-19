@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EsmConfiguration id="f7ddedb3-b737-4ce5-ba0d-a862fc243622" version="2" importRevision="1">
+	<Esms>
+		<Esm id="c779fe2e-4743-430d-bc5d-69403ccea250" name="ESM1" cpuAffinity="1" timerInterval="500000" taskSchedulerMode="" comment="" readonly="False" />
+	</Esms>
+	<Tasks />
+</EsmConfiguration>
